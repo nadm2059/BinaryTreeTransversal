@@ -1,8 +1,4 @@
-Here’s a clean **README.md** for your binary tree traversal code:
 
----
-
-````markdown
 # Binary Tree Traversal in Python
 
 This project demonstrates various **binary tree traversal algorithms** implemented in Python, including both **Depth-First Search (DFS)** and **Breadth-First Search (BFS)** methods.
