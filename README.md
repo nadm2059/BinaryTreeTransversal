@@ -143,5 +143,3 @@ python binary_tree.py
 
 
 
-Do you want me to make this README **include a diagram** of the tree in Markdown so it’s more visual? That would make it pop more.
-```
