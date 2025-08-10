@@ -1,21 +1,24 @@
 
-# Binary Tree Traversal in Python
+# 🌳 Binary Tree Traversal in Python
 
 This project demonstrates various **binary tree traversal algorithms** implemented in Python, including both **Depth-First Search (DFS)** and **Breadth-First Search (BFS)** methods.
 
-## Features
+---
 
-- **Binary Tree Node Structure** – Using a simple `Node` class with `value`, `left`, and `right` attributes.
+## ✨ Features
+- **Binary Tree Node Structure** – Simple `Node` class with `value`, `left`, and `right`.
 - **DFS Traversals**
-  - **Inorder** (Left → Root → Right)
-  - **Preorder** (Root → Left → Right)
-  - **Postorder** (Left → Right → Root)
-  - **Iterative DFS** using a stack
+  - 🟢 **Inorder** (Left → Root → Right)
+  - 🔵 **Preorder** (Root → Left → Right)
+  - 🟣 **Postorder** (Left → Right → Root)
+  - 🟠 **Iterative DFS** using a stack
 - **BFS Traversal** (Level Order) using a queue.
 
-## Code Structure
+---
 
-### 1. Node Class
+## 🛠 Code Structure
+
+### 1️⃣ Node Class
 ```python
 class Node:
     def __init__(self, value):
@@ -24,9 +27,9 @@ class Node:
         self.right = None
 ````
 
-### 2. Traversal Methods
+### 2️⃣ Traversal Methods
 
-* **Inorder Traversal**
+#### 🟢 Inorder Traversal
 
 ```python
 def inorder(root):
@@ -36,7 +39,7 @@ def inorder(root):
         inorder(root.right)
 ```
 
-* **Preorder Traversal**
+#### 🔵 Preorder Traversal
 
 ```python
 def preorder(root):
@@ -46,7 +49,7 @@ def preorder(root):
         preorder(root.right)
 ```
 
-* **Postorder Traversal**
+#### 🟣 Postorder Traversal
 
 ```python
 def postorder(root):
@@ -56,7 +59,7 @@ def postorder(root):
         print(root.value, end=' ')
 ```
 
-* **BFS Traversal**
+#### 🟡 BFS Traversal
 
 ```python
 from collections import deque
@@ -73,7 +76,7 @@ def bfs(root):
             queue.append(current.right)
 ```
 
-* **Iterative DFS**
+#### 🟠 Iterative DFS
 
 ```python
 def dfs_iterative(root):
@@ -89,52 +92,54 @@ def dfs_iterative(root):
             stack.append(current.left)
 ```
 
-### 3. Example Tree
+---
 
-The code creates a simple binary tree:
+## 🌲 Example Tree
 
+```diff
+        A
+       / \
+      B   C
+     / \   \
+    D   E   F
 ```
-       A
-      / \
-     B   C
-    / \   \
-   D   E   F
-```
 
-### 4. Sample Output
+---
 
-```
-Inorder Traversal:
+## 📜 Sample Output
+
+```diff
++ Inorder Traversal:
 D B E A C F
 
-Preorder Traversal:
++ Preorder Traversal:
 A B D E C F
 
-Postorder Traversal:
++ Postorder Traversal:
 D E B F C A
 
-BFS Traversal:
++ BFS Traversal:
 A B C D E F
 
-DFS Iterative Traversal:
++ DFS Iterative Traversal:
 A B D E C F
 ```
 
-## How to Run
+---
 
-1. Save the code to a file (e.g., `binary_tree.py`).
-2. Run the script:
+## ▶ How to Run
 
 ```bash
 python binary_tree.py
 ```
 
-3. The program will print traversal orders for the example tree.
+---
 
-## Requirements
+## 📦 Requirements
 
 * Python 3.x
-* No external dependencies (uses Python's built-in `collections` module).
+* No external dependencies (uses `collections` module).
+
 
 ---
 
